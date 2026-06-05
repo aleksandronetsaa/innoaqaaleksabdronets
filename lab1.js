@@ -1,20 +1,20 @@
-// Исходные «грязные» данные
-const rawFirstName = "  иВан  ";
-const rawLastName = "  ПЕТРОВ  ";
+// Исходные данные
+const FirstName = "  иВан  ";
+const LastName = "  ПЕТРОВ  ";
 const userAge = 25;
 const isSubscribed = true;
 
-// Очистка имени и фамилии (удаляем пробелы, приводим к нижнему регистру)
-let cleanedFirstName = rawFirstName.trim().toLowerCase();
-let cleanedLastName = rawLastName.trim().toLowerCase();
+// Очистка имени и фамилии
+let cleanedFirstName = FirstName.trim().toLowerCase();
+let cleanedLastName = LastName.trim().toLowerCase();
 
 // Делаем первую букву имени заглавной
 cleanedFirstName = cleanedFirstName[0].toUpperCase() + cleanedFirstName.slice(1);
 
-// Аналогично для фамилии (если нужно по заданию — делаем)
+// Делаем первую букву фамилии заглавной
 cleanedLastName = cleanedLastName[0].toUpperCase() + cleanedLastName.slice(1);
 
-// Генерация email (используем очищенные, но для email — строго нижний регистр)
+// Генерация email
 const userEmail = `${cleanedFirstName.toLowerCase()}.${cleanedLastName.toLowerCase()}@qa-test.com`;
 
 // Вывод результата
