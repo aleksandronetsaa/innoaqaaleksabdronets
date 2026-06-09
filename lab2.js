@@ -1,7 +1,7 @@
 //Raw данные
 const room = 'kitchen';
 const timeOfDay = 20;
-let sensorTemp = null;
+const sensorTemp = null;
 //Восстановление данных
 let currentTemp = sensorTemp ?? 22;
 //Свет
